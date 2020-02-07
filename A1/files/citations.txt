@@ -1,0 +1,11 @@
+[1] This web has imported bootstrap.min.css and bootstrap.min.js from Bootstrap retrieved from https://getbootstrap.com/
+[2] jQuery from https://jquery.com/
+[3] Popper from https://popper.js.org/
+[4] logo.jpg https://search.creativecommons.org/photos/746d6df9-870e-40b4-91f8-2b62b41f9f43
+[5] homepage.jpg https://images.pexels.com/photos/3244513/pexels-photo-3244513.jpeg?auto=compress&crop=focalpoint&cs=tinysrgb&fit=crop&h=750.0&sharp=10&w=3000
+[6] integrity.png https://www.pngitem.com/middle/ibwxTiJ_academic-integrity-model-academic-integrity-hd-png-download/
+[7] pledge.jpg https://www.dreamstime.com/pledge-icon-vector-isolated-white-background-logo-concept-pledge-sign-transparent-background-filled-black-symbol-pledge-image125797333
+[8] Dalhousie University. 2020. Plagiarism Definition. Retrieved January 23th, 2020 from https://www.dal.ca/dept/university_secretariat/academic-integrity/plagiarism-cheating.html
+[9] The use of bootstrap defined css class is learned from BootStrap official documentation https://getbootstrap.com/docs/4.4/getting-started/introduction/
+[10] The solution of the change newline for paragraphs problem is inspired by CSDN blog https://blog.csdn.net/dreamstone_xiaoqw/article/details/78251859
+[11] Dummy text generated from  https://www.lipsum.com

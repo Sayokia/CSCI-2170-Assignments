@@ -1,0 +1,25 @@
+main{
+    background-color: grey;
+}
+section{
+    background-color: white;
+    padding: 5%;
+}
+#endFooter{
+    background-color: black;
+}
+#copyRight{
+    color: red;
+}
+
+@media screen and (max-width: 800px) {
+    [class*="col-"]{
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    #login{
+        width: 100%;
+    }
+
+}
