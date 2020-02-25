@@ -1,0 +1,16 @@
+CourseCode,CourseName,CourseDescription,TermOffered,Instructor,Schedule
+CSCI 0000,Intro. to Life in CS,This is a course that covers aspects of life in CS.,Winter 2020,Dr. Midichlorian,MWF 0930-1030
+CSCI 0001,Intro. to Programming Life,This course covers aspects of programming life in general.,Winter 2020,Dr. Jediwannabe,TF 0830-1000
+CSCI 0000,Intro. to Life in CS,This is a course that covers aspects of life in CS.,Summer 2020,Dr. Midichlorian,MWF 0930-1030
+CSCI 0001,Intro. to Programming Life,This course covers aspects of programming life in general.,Summer 2020,Dr. Jediwannabe,TF 0830-1000
+CSCI 1234,Animations in Marvel v. DC,This course delves into aspects of animations and designs used in popular studios Marvel and DC.,Summer 2020,Dr. S. Lee,MWF 1600-1700
+CSCI 2001,Practical programming with Go,This course introduces the Go programming language and the concept of practical programming.,Summer 2020,Dr. G. Gle,TF 1000-1130
+CSCI 3001,Assembly language and fun,This course delves into the fun aspects of assembly languages and microprocessor programming.,Summer 2020,Dr. Processor,MW 0830-1000
+CSCI 4001,Advanced Topics in Genetic Programming,This course builds on pre-requisite knowledge to discuss applied and advanced aspects in genetic programming.,Summer 2020,Dr. Gene,MWF 1130-1230
+CSCI 4001,Advanced Topics in Genetic Programming,This course builds on pre-requisite knowledge to discuss applied and advanced aspects in genetic programming.,Fall 2020,Dr. Gene,MWF 1130-1230
+CSCI 1111,Intro. to Life in CS,This is a course that covers aspects of life in CS.,Winter 2020,Dr. Midichlorian,MWF 0930-1030
+CSCI 2222,Intro. to Life in CS,This is a course that covers aspects of life in CS.,Winter 2020,Dr. Midichlorian,MWF 0930-1030
+CSCI 4002,Intro. to Life in CS,This is a course that covers aspects of life in CS.,Winter 2020,Dr. Midichlorian,MWF 1130-1230
+CSCI 4444,Intro. to Life in CS,This is a course that covers aspects of life in CS.,Summer 2020,Dr. Midichlorian,MWF 0930-1030
+CSCI 5555,Intro. to Life in CS,This is a course that covers aspects of life in CS.,Summer 2020,Dr. Midichlorian,MWF 0930-1030
+CSCI 2170,Intro to Server Side Scripting,This is a course that covers Server Side Scripting.,Winter 2020,Dr. Midichlorian,TR 0830-1130
