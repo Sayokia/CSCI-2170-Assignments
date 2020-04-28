@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body style="font-family: verdana, sans-serif;font-size: 12px;">
+<h3><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">A4 and A5</span></h3>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; background-color: yellow;"><b><i>The user stories listed here apply for both A4 and A5.</i></b></span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">Instead of creating 2 x new assignments, I have created 1 x longer assignment.</span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">The new assignment will be marked for 200 marks. The marks will be split equally and applied for A4 and A5.</span></p>
+</li>
+<li><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">Let me not stress you further by creating two new assignments -- just one assignment with a starting code base that we worked on in class. Update it and complete the requirements stated in these user stories.</span></li>
+</ul>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">&nbsp;</span></p>
+<h3><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">Changelog</span></h3>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">V 1.0 -- Raghav, 20 Mar 2020, Initial version.</span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">V 1.1 -- Raghav, 06 Apr 2020, Grading scheme added to the acceptance criteria.</span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">V 1.101 -- Raghav, 16 Apr 2020, Corrected error in deadline / SUNDAY the 19th, not Saturday the 19th. Sorry!</span></p>
+</li>
+</ul>
+<h3>&nbsp;</h3>
+<h3><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">Re-stating some expectations in this assignment</span></h3>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; background-color: yellow;"><b><i>No more milestones -- due to COVID-19 and everyone working remotely, I will not enforce any milestones.&nbsp;</i></b></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"><b><i></i></b>User stories are again used to specify requirements.</span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">All submissions must be submitted on Gitlab (same as A1).&nbsp;We check for functionality by using code submitted on Gitlab.</span></p>
+</li>
+</ul>
+<h3>&nbsp;</h3>
+<h3><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">Purpose</span></h3>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">The purpose of this assignment is for you to apply your knowledge of server-side scripting to create a&nbsp;</span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">In this assignment, you will apply your knowledge of PHP, MySQL, Ajax, JS, Security and Regular Expressions.</span></p>
+</li>
+</ul>
+<p>&nbsp;</p>
+<h3><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">When is the assignment due?</span></h3>
+<ul>
+<li><span style="font-family: arial, helvetica, sans-serif;"><strong style="font-size: 0.95rem; letter-spacing: 0.01rem;"><span style="font-size: 12pt;">SUNDAY </span></strong><span style="text-decoration: line-through;"><em><span style="font-size: 12pt;">Saturday</span></em></span><strong style="font-size: 0.95rem; letter-spacing: 0.01rem;"><span style="font-size: 12pt;">, 19 April 2020 (11:30pm)</span></strong></span></li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"><span style="color: #4f4f4f;">Start your assignment submission at 11:00pm to give yourself plenty of time -- if you start your submission at 11:29pm, it may not complete before 11:30pm and Brightspace will disable submissions precisely at the deadline.</span></span></p>
+</li>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;"><strong><span style="color: #4f4f4f;">Late submissions and email submissions WILL NOT BE ACCEPTED.</span></strong></span><span style="font-family: arial, helvetica, sans-serif;"><strong style="font-size: 0.95rem; letter-spacing: 0.01rem;"><span style="font-size: 12pt;"></span></strong></span></p>
+</li>
+</ul>
+<p>&nbsp;</p>
+<h3><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">Can we work on this assignment individually or in groups?</span></h3>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; background-color: yellow;">You are expected to work&nbsp;<strong>individually</strong>.</span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"><a rel="noopener" href="https://www.dal.ca/dept/university_secretariat/academic-integrity.html">Dalhousie's academic integrity rules</a> apply.</span></p>
+</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt; background-color: yellow;">EXPECTATIONS, IN DETAIL</span></h3>
+<h4><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">STEP 1: </span><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">Development:</span></h4>
+<ul>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">It is ideal to develop the website using your localhost setup and verify its functionality by hosting it on the FCS Bluenose server.</span></p>
+</li>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">You can find out more about the web hosting space assigned to you by accessing <a href="https://web.cs.dal.ca" target="_blank" rel="noopener">https://web.cs.dal.ca</a></span></p>
+</li>
+<li><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">You are expected to develop your website to meet the acceptance criteria set out in the user stories below.</span></li>
+</ul>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;"></span>&nbsp;</p>
+<hr style="width: 100%; height: auto; color: #ffffff; border: 1px inset #cccccc;" />
+<h4><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">STEP 2: Your tasks:</span></h4>
+<hr style="width: 100%; height: auto; color: #ffffff; border: 1px inset #cccccc;" />
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;">Preliminaries:</span></span></strong></p>
+<ul>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">Clone the folder named&nbsp;<strong>A4&nbsp;</strong>that is available on Gitlab under CSCI 2170.</span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Preserve the directory structure; do not change it. </span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Create new PHP and/or style/JS/image files if you need to and place these files in appropriate folders in the A4 directory that you clone/download.</span></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Update the <strong>README.md</strong> file with your name, B00 number, Dal email address and the Academic Integrity pledge that you submitted in Assignment 1.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Include <span style="text-decoration: underline;"><strong>all</strong></span> citations and references to any external resource and/or code in&nbsp;<strong>both&nbsp;</strong>in the code and in README.md</span></span></p>
+</li>
+<li><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Some of the instructions require you to make certain assumptions. Any assumptions you make to implement the functionality as expected in this assignment must be described in README.md as a separate section.<br /></span></span></li>
+</ul>
+<p>&nbsp;</p>
+<hr style="width: 100%; height: auto; color: #ffffff; border: 1px inset #cccccc;" />
+<h4><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;">User Story 1: Clean-up and use re-use principles (I know, these really should be two stories! ^_^): (10 marks)</span></span></strong></h4>
+<ul>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">As a <em><strong>back-end web developer</strong></em>,<br />I need to <b><i>use principles of re-use and clean up the code</i></b>,<br />So that I can&nbsp;<strong><em>use best practices in programming when working on this project</em>.</strong><br /></span></p>
+</li>
+<li>
+<p><span style="text-decoration: underline;"><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">Acceptance criteria: Re-use and clean-up code in the starter assignment files:</span></span></p>
+<ul>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">Move code that can be re-used, e.g. header, footer, processing, etc., into separate files where possible.</span></p>
+</li>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">This is the code that we worked on during a class code-along session. It is not clean, it has unnecessary elements, like the JS in index.php; see if you can clean it up.</span></p>
+</li>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">Fix any errors that you may encounter.</span><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">&nbsp;<br /></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">Marking:</span></p>
+<ul>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">The&nbsp;<strong>10 marks&nbsp;</strong>for this user story is to ensure that you have created re-usable files and have cleaned up the code.&nbsp;</span></p>
+</li>
+</ul>
+</li>
+</ul>
+<p>&nbsp;</p>
+<hr style="width: 100%; height: auto; color: #ffffff; border: 1px inset #cccccc;" />
+<h4><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;"><strong>User Story 1 (a): Database connection and use: (5 marks)</strong></span></span></h4>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">As a <em><strong>back-end web developer</strong></em><em>,<br /></em>I need to&nbsp;<em><strong>connect the website to a database</strong></em>,<br />so that I can&nbsp;<em><strong>implement functionality such as storing/retrieving/modifying data in a reliable manner</strong></em>.</span></span></p>
+</li>
+<li>
+<p><span style="text-decoration: underline;"><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Acceptance criteria: Verify that DB.php works.</span></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">This is mostly a verification task. Verify that db.php included in the assignment folder works on your computer.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">If it doesn't, fix the errors.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Create tables based on the ERD specified. You may also use the A4-tables.sql file to quickly create all tables in your MySQL or MariaDB instance.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><strong>Note: </strong></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><strong>When marking, we may change the DB file to work with our database on Bluenose</strong>. If you want to verify whether your file works on the FCS Bluenose server, you will need to change the DB login credentials as specified on <a href="https://web.cs.dal.ca">https://web.cs.dal.ca</a>&nbsp;under "Databases". You may have to set it up on <a href="https://web.cs.dal.ca">https://web.cs.dal.ca</a>&nbsp;if you have not already done so.</span></span><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">&nbsp;</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">We will use the same table structures and same table column names. So as long as you have used the same structure referenced in the ERD and table structure diagrams without any typos or case differences, you should be okay.</span></span></p>
+</li>
+<li><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><strong>Test your code with your own data input to the DB</strong>.</span></span></li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">If we are unable to execute your code with our table structures, you will not receive any points for the specific functionality.<br /></span></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Marking:</span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The&nbsp;<strong>5 marks&nbsp;</strong>for this task is mostly to ensure that your DB is working correctly. The DB table names and fields are provided to you, just make sure that the names used are in the correct case and exactly as specified.</span></span></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>&nbsp;</p>
+<hr style="width: 100%; height: auto; color: #ffffff; border: 1px inset #cccccc;" />
+<h4><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;">User Story 2: Login and session management (And yes, you may re-use the login code you used in A3; update it as specified and just make sure that it works here too ^_^): (10 marks)</span></span></strong></h4>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">As a&nbsp;<strong><em>user</em></strong>,<br />I need to&nbsp;<em><strong>login (and logout) from the website</strong></em><em>,<br /></em>So that I can&nbsp;<strong><em>securely interact with the content on the web page</em></strong>.</span></span><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"></span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><span style="text-decoration: underline;">Acceptance criteria: User submits login information (username and password):</span></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The website compares the username and password combination.<br /></span></span></p>
+<ul>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Make sure that the password is encrypted before it is saved in the database.</span></span></strong></p>
+</li>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">You can use password_hash() to generate hash of the passwords before storing them in the database.</span></span></strong></p>
+</li>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Encrypted passwords can be verified using password_verify().</span></span></strong></p>
+<ul>
+<li><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><strong>(4 marks --&nbsp;</strong>passwords are hashed and verified using these functions.<strong>)</strong></span></span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">If the user enters the <strong>correct</strong>&nbsp;login information,<br /></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The user is logged in.<br /></span></span></p>
+</li>
+<li><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">A new navigation menu link appears with a link to the <strong>list dashboard</strong>.</span></span></li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">A new navigation menu (a.k.a. <strong>user control</strong>) link appears with the user's full name. This has a drop-down action that shows a link to <strong>user profile</strong> and <strong>logout</strong>.<br /></span></span></p>
+</li>
+<li><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The user is redirected to the&nbsp;<strong>list dashboard&nbsp;</strong>after successful login.</span></span></li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">If the user enters the <strong>wrong</strong>&nbsp;login information,<br /></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The user sees an error message below the login form, in red colour, indicating the error.<br /></span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The user is *not* logged in.</span></span></p>
+</li>
+</ul>
+</li>
+<li><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Marking:</span></span>
+<ul>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">(3 marks --</span></span></strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">&nbsp;user is logged in to access the dashboard.<strong>)</strong></span></span><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"></span></span></p>
+</li>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">(3 marks --&nbsp;</span></span></strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">user is redirected to the login page - with error - if they enter wrong login information.<strong>)</strong></span></span></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="text-decoration: underline;"><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Acceptance criteria: User selects the logout option from the drop-down navigation:</span></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The user is logged out.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The user control drop-down menu item and list dashboard menu item are removed from the navigation menu.</span></span></p>
+<ul>
+<li><em><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">(just please make sure that on logout, the behaviour is consistent with expectations in other user stories in this assignment.)</span></span></strong></em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">Note:</span></strong></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"></span><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">Set up the tables as specified in the user story named Database Connection and Use. You'll need to use these tables for the login feature.</span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"></span><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">Update index.php so that users see the login form if they are not logged in.</span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"></span><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">login.php must perform the following actions:</span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"></span><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">Process the login information and authenticate (or, verify) the user, i.e. compare the username and password submitted by the user with details stored in the DB, and verify that records match. </span><br /><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"></span></p>
+</li>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">The user is expected to provide their username (not email address) along with their password.</span></strong><br /><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">If the user has entered wrong login information, i.e. if there is an error in either the username or password, do the following: </span><br /><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">Return an appropriate error code and redirect the user to the homepage. Describe the error code you will use and how you will implement it in README.md</span><br /><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">Clearly indicate through an error message that there has been an error. I will leave the content of the error message up to you. Ensure that this error message is in a colour that is different from the regular text so that it is emphasized. This feedback to the user also ensures that you have implemented &ldquo;Visibility of System Status&rdquo;, which is one of the important Usability Heuristics.</span><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"><br /></span><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">If the user enters the correct information:</span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">Store user details such as full name, username and user type as session variables, since they may be needed for other features.</span></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">Implement the logout feature in logout.php stored in the <strong>includes</strong> folder. </span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">This file must log the user out by destroying the session appropriately. There is one standard way of doing this as discussed in class. Please use it and cite it appropriately.</span><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"><br /></span></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<hr style="width: 100%; height: auto; color: #ffffff; border: 1px inset #cccccc;" />
+<h4><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;">Ajax expectations for User Stories 4, 5 and 6</span></span></strong></h4>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Use Ajax for managing actions in the dashboard (e.g. marking a list as done [archived]&nbsp;</span></span><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">or not done [unarchived], quick edit, etc.)</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Use Ajax to add list item to the list (when creating and editing the list).</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Feel free to use Ajax for other functionalities, where applicable.</span></span></p>
+</li>
+</ul>
+<p>&nbsp;</p>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;">User Story 4: User is on the list dashboard page: (25 marks)</span></span></strong></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">As a <strong><em>user</em>,</strong><br />I need to be <strong><em>able to see a dashboard of my lists</em></strong>,<br />So that I can&nbsp;<em><strong>see all lists and manage them or create a new list.</strong></em></span></span></p>
+</li>
+<li>
+<p><span style="text-decoration: underline;"><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Acceptance criteria: User lands on the list dashboard page.</span></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">If the user <strong>is logged in:</strong></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">User sees all lists that they have created, or an indication that they have not created any lists. </span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><strong>(5 marks --</strong>&nbsp;the focus here is to see the lists or not, and a notice if there are no lists.<strong>)</strong></span></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><strong></strong>The user sees their full name in the navigation menu, with a drop-down option to logout appearing when they click on the name. </span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><strong>(3 marks)</strong></span></span></p>
+</li>
+</ul>
+</li>
+<li><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The user sees a link to the list dashboard in the navigation menu.&nbsp;</span></span>
+<ul>
+<li><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><strong>(2 marks)</strong></span></span></li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The user sees all lists that they have created in the dashboard page.&nbsp;</span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><strong>(5 marks --&nbsp;</strong>the focus here is on the lists, if they are created, users should see all lists they create.<strong>)</strong></span></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">If the user has not created any lists, a simple message to indicate that there are no lists to display will be shown to the user.</span></span></p>
+<ul>
+<li><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">(Marking guideline is covered in the first item in this acceptance criteria.)</span></span></li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The user sees an option to create a new list.</span></span></p>
+<ul>
+<li><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">(5 marks --</span></span></strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">&nbsp;a clear option to create a new list, not hidden under some menu. Clear and visible with an identifiable call-to-action.<strong>)</strong></span></span><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"></span></span></li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">For each list that the user has created, the user sees options to -- (a) edit the list, (b) archive or mark as done (changes to mark as not done when clicked), (c) delete the list.</span></span></p>
+<ul>
+<li><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">(3 marks --&nbsp;</span></span></strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">associated with each list must be the options to edit/archive/delete, with corresponding actions listed in User Story 6.<strong>)</strong></span></span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">If the user <strong>is not logged in</strong>: </span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The user does not get to view the list dashboard page. They are redirected to the login page (homepage) saying that all features of the site require people to login.</span></span></p>
+<ul>
+<li><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">(3 marks --&nbsp;</span></span></strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">secure access to the dashboard.<strong>)</strong></span></span></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul></ul>
+</li>
+</ul>
+<p>&nbsp;</p>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;">User Story 5: User creates a new list: (25 marks)</span></span></strong></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">As a <strong><em>user</em>,</strong><br />I need to be <strong><em>able to create a new list</em></strong>,<br />So that I can&nbsp;<em><strong>plan things to do in my daily schedule.</strong></em></span></span></p>
+</li>
+<li>
+<p><span style="text-decoration: underline;"><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Acceptance criteria: User clicks on the option to create new list in the list dashboard.</span></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">User is taken to the create a list page, which is an updated version of the list interface that is given to you through Gitlab.</span></p>
+<ul>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">(4 marks --</span></strong><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">&nbsp;user is able to see that the create list interface is behind the login-wall, i.e. has secure access. Not everyone can access the create a list page, only those who are logged in.<strong>)</strong></span><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"></span></p>
+</li>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">(3 marks --&nbsp;</span></strong><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">the interface to create a list has a consistent user interface appearance as other parts/pages of the website.<strong>)</strong></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">User is able to give a name to the list.</span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">If user does not provide a name, the default name is "<strong>My List #</strong>", where&nbsp;<strong>#&nbsp;</strong>is replaced by the value of <strong>list_id</strong> in the <strong>alllists</strong> table.</span></p>
+</li>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">(3 marks --</span></strong><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">&nbsp;user is able to save a name to the list.<strong>)</strong></span><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"><strong>(3 marks --&nbsp;</strong>the default name of the list is as specified above.<strong>)</strong></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">All other functions of creating the list are retained from the code given to you.</span></p>
+<ul>
+<li><strong><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">(2 marks)</span></strong></li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">If user clicks on the option to <strong>save the list</strong>, user is redirected to the list dashboard and they see their new list in the dashboard.</span></p>
+<ul>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">(2 marks -- </span></strong><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">for redirection.</span><strong><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">)</span></strong></p>
+</li>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">(4 marks --&nbsp;</span></strong><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">list shows up in dashboard.<strong>)</strong></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">User also has an option to <strong>discard the list</strong>, at which point the list entries and the list are deleted and user is redirected to the dashboard.</span></p>
+<ul>
+<li><strong><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">(1 mark -- </span></strong><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">for redirection.</span><strong><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">)</span></strong><strong><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"></span></strong></li>
+<li><strong><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">(3 marks --&nbsp;</span></strong><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">database entries are properly discarded.<strong>)</strong></span></li>
+</ul>
+</li>
+</ul>
+<ul></ul>
+</li>
+</ul>
+<p>&nbsp;</p>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;">User Story 6: User manages their lists: (40 marks)</span></span></strong></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">As a <strong><em>user</em>,</strong><br />I need to be <strong><em>able to manage my lists</em></strong>,<br />So that I can <strong><em>edit, delete or archive my lists</em></strong><em><strong>.</strong></em></span></span></p>
+</li>
+<li>
+<p><span style="text-decoration: underline;"><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Acceptance criteria: User chooses to edit a list.</span></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">User is taken to an "update list" interface, which looks exactly like the "create a new list" interface. </span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Only this time, all the items from the list being edited are displayed in the fields.</span></span></p>
+</li>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">(3 marks --</span></span></strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">&nbsp;look and feel is like the "create a new list" interface.<strong>)</strong></span></span><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"></span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><strong>(4 marks --&nbsp;</strong>data is displayed in the fields.<strong>)</strong></span></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">User is able to mark items as done (or as not done), delete items and add items to the list.</span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">This is based on what we have already done in class and what you have in the code given to you through Gitlab.</span></span></p>
+</li>
+<li><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">(3 marks)</span></span></strong></li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">User sees a&nbsp;<strong>save changes&nbsp;</strong>button.</span></span></p>
+<ul>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">(2 marks --&nbsp;</span></span></strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">the presence of the save button.<strong>)</strong></span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><strong>(3 marks --&nbsp;</strong>clicking on the save button saves all changes made to the list.<strong>)</strong></span></span></p>
+</li>
+</ul>
+</li>
+</ul>
+<ul></ul>
+</li>
+<li>
+<p><span style="text-decoration: underline;"><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Acceptance criteria: User chooses to save the edited list.</span></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">User is redirected to the dashboard.</span></span></p>
+<ul>
+<li><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">(2 marks --&nbsp;</span></span></strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">after saving all changes as explained above, user is redirected to the dashboard.<strong>)</strong></span></span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="text-decoration: underline;"><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Acceptance criteria: User chooses to delete the list.</span></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">User's list is deleted.</span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">In the DB, each list (alllists table) is associated with many list items (mylist table).</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">All list items associated with the list must be deleted from the mylist table when a list is deleted. One SQL query for this, please.</span></span></p>
+</li>
+<li><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">(7 marks --</span></span></strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">&nbsp;all items in the both tables are appropriately deleted.)</span></span><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"></span></span></li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The dashboard view is refreshed after the delete action is completed.</span></span></p>
+<ul>
+<li><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">(3 marks --</span></span></strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">&nbsp;dashboard view is refreshed.<strong>)</strong></span></span><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"></span></span></li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">User does not see the deleted list when the dashboard view updates.</span></span></p>
+<ul>
+<li><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">(3 marks --</span></span></strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">&nbsp;deleted list is removed from the view.<strong>)</strong></span></span><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"></span></span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="text-decoration: underline;"><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Acceptance criteria: User chooses to archive a list (or mark a list as done).</span></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">User sees a way to know that the list is archived (or marked as done).</span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">This could be either through (a) changing the appearance of the list title, (b) moving the list to another part of the dashboard view. I leave this choice to you.</span></span></p>
+</li>
+<li><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">(5 marks --</span></span></strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">&nbsp;user clearly knows whether the list is archived. There is clear distinction between active lists and archived lists.<strong>)</strong></span></span><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"></span></span></li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">User sees a way to unarchive the list (or mark as not done).</span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">This could be through a button or option that is visible below the list's name, just like what we have now for individual list items.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">If the list is marked as unarchived or not done, the list's appearance should go back to the default view, i.e. changes to appearance or position made under the above acceptance criteria must be reverted to default.</span></span><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"></span></span></p>
+</li>
+<li><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">(5 marks --</span></span></strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">&nbsp;the action link or button is clear and unambiguous.<strong>)</strong></span></span><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"></span></span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;">Bonus Acceptance Criteria (10 marks): User is able to&nbsp;quick edit the list.</span></span></strong></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">User sees an option to "quick edit" the list.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">When user clicks on quick edit, user must:</span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><strong>Be able to edit only the title of the list without leaving the dashboard</strong>.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">A small form text input must become visible below the title of the list with the current title visible.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">User must see options to&nbsp;<strong>save changes&nbsp;</strong>and&nbsp;<strong>cancel</strong>.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">If user clicks on <strong>save changes</strong> the title must be updated.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">If user clicks on&nbsp;<strong>cancel&nbsp;</strong>the title must not be updated.</span></span></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<hr style="width: 100%; height: auto; color: #ffffff; border: 1px inset #cccccc;" />
+<h4><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;">User Story 7: Controlling what data users input (15 marks)</span></span></strong></h4>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">As a&nbsp;<strong><em>user</em></strong>,<br />I need to&nbsp;<em><strong>submit only valid characters to the list</strong></em><em>,<br /></em>So that I can&nbsp;<strong><em>ensure that the list is secure</em></strong>.</span></span><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"></span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><span style="text-decoration: underline;">Acceptance criteria: User enters list items:</span></span></span></p>
+<ul>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">Data entered is verified using regular data sanitization techniques to validate data being input to the database.</span></p>
+<ul>
+<li><strong><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">(5 marks)</span></strong></li>
+</ul>
+</li>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">The MySQLi method <strong>$mysqli_connection_object-&gt;real_escape_string(escapestring)</strong> is used to escape strings before input to the database.</span></p>
+<ul>
+<li><strong><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">(5 marks)</span></strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><span style="text-decoration: underline;">Acceptance criteria: User enters list names:</span></span></span></p>
+<ul>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">User is not allowed to enter any special characters in list names.</span></p>
+<ul>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">User&nbsp;<strong>regular expressions</strong> to validate data being input.</span></p>
+</li>
+<li><strong><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">(5 marks --</span></strong><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">&nbsp;validate names to avoid special characters from being submitted to the table.<strong>)</strong></span><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;"></span></li>
+</ul>
+</li>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">Data entered is verified using regular data sanitization techniques to validate data being input to the database.</span><span style="text-decoration: underline;"><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"></span></span></span></p>
+<ul>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">(Marking covered under the first acceptance criteria above.)</span></p>
+</li>
+</ul>
+</li>
+<li><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">The MySQLi method <strong>$mysqli_connection_object-&gt;real_escape_string(escapestring)</strong> is used to escape strings before input to the database.</span><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;"></span>
+<ul>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">(Marking covered under the first acceptance criteria above.)</span></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;"></span></span></strong>&nbsp;</p>
+<p>&nbsp;</p>
+<hr style="width: 100%; height: auto; color: #ffffff; border: 1px inset #cccccc;" />
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;">User Story 8: Role-based access control (20 marks)</span></span></strong></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">As an&nbsp;<strong><em>administrator</em></strong>,<br />I need to&nbsp;<em><strong>see user information</strong></em><em>,<br /></em>So that I can&nbsp;<strong><em>view a list of all users and their email addresses</em></strong>.</span></span><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"></span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><span style="text-decoration: underline;">Acceptance criteria: Navigation menu:</span></span></span></p>
+<ul>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">When the administrator is logged in (user type 0 in the users table), they must see a new item named&nbsp;<strong>View all users&nbsp;</strong>in the navigation menu.</span></p>
+<ul>
+<li>
+<p><strong><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">(4 marks --</span></strong><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">&nbsp;administrator is able to see all users who are registered in the system, including themselves.<strong>)</strong></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">Other users must not see this menu item.</span></p>
+<ul>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;"><strong>(4 marks -- role-based access --&nbsp;</strong>no other type of user is able to see all users, even if they try to access the page by manually entering the URL.<strong>)</strong></span></p>
+</li>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;"><strong>(2 marks -- role-based access --&nbsp;</strong>if a user other than administrator tries to access this page to view all users, they are redirected to the dashboard.<strong>)</strong></span></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><span style="text-decoration: underline;">Acceptance criteria: Administrator clicks on <strong>View all users</strong> from the navigation menu:</span></span></span></p>
+<ul>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">User is taken to a new page (<strong>view_users.php</strong>) that has the same appearance as other pages.</span></p>
+<ul>
+<li>
+<p><strong><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">(3 marks --</span></strong><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">&nbsp;only administrators are taken to this new page.<strong>)</strong></span><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;"></span></p>
+</li>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;"><strong>(2 marks --&nbsp;</strong>this page has an appearance and look-and-feel consistent with other pages on this website.<strong>)</strong></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The administrator sees an HTML table with a list of all users (their full names and email addresses only).</span></span></p>
+<ul>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">(5 marks --</span></span></strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">&nbsp;administrator sees a list of all users registered on the site in a table. </span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Just placing a table and content in the table gets you a maximum of 75%, i.e. 3.5/5.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">For getting 100% in this aspect, you will need to go above and beyond just placing a table -- style the table appropriately using CSS, use a colour scheme consistent with the web page that you have used, etc.)</span></span></p>
+<span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"></span></span></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;"></span></span></strong>&nbsp;</p>
+<p>&nbsp;</p>
+<hr style="width: 100%; height: auto; color: #ffffff; border: 1px inset #cccccc;" />
+<h4><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;">User Story 9: User profile (50 marks)</span></span></strong></h4>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">As an&nbsp;<strong><em>user or administrator</em></strong>,<br />I need to&nbsp;<em><strong>see my profile</strong></em><em>,<br /></em>So that I can&nbsp;<strong><em>view my information and edit email addresses or first/last names</em></strong>.</span></span><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"></span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><span style="text-decoration: underline;">Acceptance criteria: Navigation menu:</span></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">When the user or administrator clicks on the&nbsp;<strong>user profile&nbsp;</strong>link from the user control drop-down in the navigation menu, they are redirected to a page named&nbsp;<strong>profile.php</strong></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><strong>(3 marks --&nbsp;</strong>user is redirected appropriately.<strong>)</strong></span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><strong>(3 marks --&nbsp;access control</strong>&nbsp;<strong>--&nbsp;</strong>only logged in users have access to this page. If users try to access this page without logging in and by typing in the URL, they are redirected to the homepage.<strong>)</strong></span></span></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><span style="text-decoration: underline;">Acceptance criteria: User or administrator clicks on the <strong>user profile&nbsp;</strong>link from the user control drop-down:</span></span></span></p>
+<ul>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">User is taken to a new page (<strong>profile.php</strong>) that has the same appearance as other pages.</span><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"></span></span></p>
+</li>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">The profile page shows: </span></p>
+<ul>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">The user's (or administrator's) full name (first and last).</span></p>
+</li>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">The user's email address.</span></p>
+</li>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">The user's username.</span></p>
+</li>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">The user's password </span></p>
+<ul>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">(hidden using *, use password input field)</span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">The user's phone number.</span></p>
+</li>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">A default profile image (defaultprofile.png that is available in the img folder) - no option to change this image.</span></p>
+</li>
+<li><strong><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">(4 marks --&nbsp;</span></strong><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">all information is shown as specified.<strong>)</strong></span></li>
+</ul>
+</li>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">The profile page allows user or administrator to edit:</span></p>
+<ul>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">Email address</span></p>
+</li>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">Phone number</span></p>
+</li>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">First and last names</span><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;"></span></p>
+</li>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">Password</span></p>
+</li>
+<li>
+<p><strong><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">(3 marks --</span></strong><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">&nbsp;only the above information is editable.<strong>)</strong></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Hints / suggestions:</span></span></strong></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Try to structure the page like a form with disabled input text fields that are pre-filled with data from the table.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">When the user clicks on edit, enable all fields and update the tables when they click on save.</span></span></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="text-decoration: underline;"><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Acceptance criteria: User or administrator wants to update information in the profile:</span></span></span><span style="text-decoration: underline;"><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"></span></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">User clicks on <strong>edit profile&nbsp;</strong>to see all editable fields enabled (only the ones listed above).</span></span></p>
+<ul>
+<li><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">(3 marks --</span></span></strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">&nbsp;the call-to-action to edit the profile is clearly visible to users.<strong>)</strong></span></span><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"></span></span></li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">User is able to modify the field.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><strong>If user enters a new password</strong>, it must be hashed and stored in the database.</span></span></p>
+<ul>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">(4 marks --</span></span></strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">&nbsp;password hashing.<strong>)</strong></span></span><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"></span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><strong>(2 marks --&nbsp;</strong>password storage in the DB.<strong>)</strong></span></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">If user enters a new email</span></span></strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><strong> address</strong>, it must be a valid email address -- use <strong>regular expressions</strong> to verify.</span></span><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"></span></span></p>
+<ul>
+<li><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">(6 marks --</span></span></strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">&nbsp;valid email address entered and verified using regex.<strong>)</strong></span></span><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"></span></span></li>
+</ul>
+</li>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">If user enters a new phone</span></span></strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><strong> number</strong>, it must be in the format (###)-(###)-(####) -- use regular expressions to verify (a) that there are 10 digits in the number, and (b) that the numbers are organized in that format.</span></span></p>
+<ul>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">(4 marks --</span></span></strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">&nbsp;regex verification to count number of digits in the phone number.<strong>)</strong></span></span><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"></span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><strong>(4 marks --&nbsp;</strong>regex verification to verify if number organized in that format.<strong>)</strong></span></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">After editing the fields, user can either&nbsp;<strong>save profile&nbsp;</strong>or&nbsp;<strong>cancel changes</strong>.</span></span></p>
+<ul>
+<li><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">(2 marks --&nbsp;</span></span></strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">the two options are clearly visible.<strong>)</strong></span></span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="text-decoration: underline;"><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Acceptance criteria: User or administrator clicks on&nbsp;<strong>save profile</strong>:</span></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">All changes are saved in the database.</span></span></p>
+<ul>
+<li><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">(2 marks)</span></span></strong></li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The profile page reloads and the changes are visible.</span></span></p>
+<ul>
+<li><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">(3 marks)</span></span></strong></li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">All form fields are disabled again, but with data visible.</span></span></p>
+<ul>
+<li><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">(3 marks)</span></span></strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="text-decoration: underline;"><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Acceptance criteria: User or administrator clicks on&nbsp;<strong>cancel changes</strong>:</span></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Changes are discarded and the page is reloaded to show original data (without modification or edits).</span></span></p>
+<ul>
+<li><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">(4 marks)</span></span></strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;">&nbsp;&nbsp;</span></span></strong></p>
+<hr style="width: 100%; height: auto; color: #ffffff; border: 1px inset #cccccc;" />
+<h4><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;">Citations:</span></span></strong></h4>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Citations must be in the ACM format that is described on the official ACM web page here:<a href="https://www.acm.org/publications/authors/reference-formatting" target="_blank" rel="noopener">https://www.acm.org/publications/authors/reference-formatting</a></span><span style="font-size: 16px;"></span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Citations must be included in&nbsp;<strong>README.md&nbsp;</strong>and in the code if you have used any external resources to learn about specific code segments.</span></span></p>
+</li>
+</ul>
+<p>&nbsp;</p>
+<hr style="width: 100%; height: auto; color: #ffffff; border: 1px inset #cccccc;" />
+<h4><span style="font-size: 14pt; font-family: arial, helvetica, sans-serif;">STEP 4: What do I submit?</span></h4>
+<ul>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">You are required to submit this assignment&nbsp;<strong>in two places -- (a) Brightspace, and (b) Gitlab</strong><strong>.</strong></span></p>
+</li>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;"><strong>Submission on Gitlab&nbsp;--</strong> </span></p>
+<ul>
+<li><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Instructions to submit assignments on Gitlab (<a href="https://git.cs.dal.ca/" target="_blank" rel="noopener">https://git.cs.dal.ca/</a>) have been posted in a section under "Content &gt;&gt; Assignments" --- if you have any questions, please reach out to the CS Help Desk.</span></li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><strong><span style="font-size: 12pt;">Submission on Brightspace --</span></strong><span style="font-size: 12pt;">&nbsp;A single zip file named&nbsp;<strong>&lt;LASTNAME&gt;_&lt;FIRSTNAME&gt;_B00XXXXXX_A4A5.zip</strong></span><span style="font-size: 12pt;"></span></span></p>
+<ul>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Replace &lt;LASTNAME&gt; with your last name, and &lt;FIRSTNAME&gt; with your first name.</span></p>
+</li>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Replace "B00XXXXXX" with your B00 number.</span></p>
+</li>
+</ul>
+</li>
+<li><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">The above ZIP file should preserve the directory structure available in Gitlab. You may add additional PHP and/or other files as needed. Include a summary of the files you have added and why in <strong>README.md</strong><br /></span></li>
+</ul>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;"></span>&nbsp;</p>
+<hr style="width: 100%; height: auto; color: #ffffff; border: 1px inset #cccccc;" />
+<h4><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">STEP 5: Marking Scheme</span></h4>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><strong>Detailed marking scheme</strong>&nbsp;is available -- as part of the user story and acceptance criteria -- no separate document.</span></span></p>
+</li>
+</ul>
+<p></p>
+<p><span style="font-family: arial, helvetica, sans-serif;">&nbsp;</span></p>
+<p><span style="font-family: arial, helvetica, sans-serif;">&nbsp;</span></p>
+<p></p>
+<p></p>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">&nbsp;</span></p>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">&nbsp;</span></p>
+</body>
+</html>
