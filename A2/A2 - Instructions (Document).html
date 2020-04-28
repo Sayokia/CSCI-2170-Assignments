@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body style="font-family: verdana, sans-serif;font-size: 12px;">
+<h3><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">Changelog</span></h3>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">V 1.0 -- Raghav, 28 Jan 2020, Initial version.</span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">Clarification -- you are not expected to implement the&nbsp;<strong>logout functionality in A2.</strong></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">V 1.1 -- Raghav, 10 Feb 2020, Updated the deadline.</span></p>
+<span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"><strong></strong></span></li>
+</ul>
+<h3><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">&nbsp;</span></h3>
+<h3><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">New in this assignment</span></h3>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"><em><strong>Milestones!</strong></em> Check section below for information.</span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">All submissions must be submitted on Gitlab (same as A1).&nbsp;We check for functionality by using code submitted on Gitlab.</span></p>
+</li>
+</ul>
+<h3></h3>
+<h3><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">Purpose</span></h3>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">The purpose of this assignment is for you to apply your knowledge of front-end web development and what you have learned in server-side scripting to develop a web site to allow students to "add/remove" courses from their course schedule.</span></p>
+</li>
+<li><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">Think of this as a student-facing and student-centric version of the course information/add feature on DalOnline.</span></li>
+</ul>
+<p></p>
+<h3><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">When is the assignment due?</span></h3>
+<ul>
+<li><span style="font-family: arial, helvetica, sans-serif;"><strong style="font-size: 0.95rem; letter-spacing: 0.01rem;"><span style="font-size: 12pt;">Saturday, 22 February 2020 (11:30pm) </span></strong><span style="text-decoration: line-through; color: #808080;"><em><span style="font-size: 12pt;">15 February 2020 (11:30pm)</span></em></span></span></li>
+</ul>
+<p></p>
+<h3><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">Can we work on this assignment individually or in groups?</span></h3>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; background-color: yellow;">You are expected to work&nbsp;<strong>individually</strong>.</span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"><a rel="noopener" href="https://www.dal.ca/dept/university_secretariat/academic-integrity.html">Dalhousie's academic integrity rules</a> apply.</span></p>
+</li>
+</ul>
+<p></p>
+<h3><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">Expectations, in detail</span></h3>
+<ol>
+<li>
+<h4><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">STEP 1: </span><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">Development:</span></h4>
+<ul>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">It is ideal to develop the website using your localhost setup and verify its functionality by hosting it on the FCS Bluenose server.</span></p>
+</li>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">You can find out more about the web hosting space assigned to you by accessing <a href="https://web.cs.dal.ca" target="_blank" rel="noopener">https://web.cs.dal.ca</a></span></p>
+</li>
+<li><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">You are expected to develop your website to meet the acceptance criteria set out in the user stories below.</span></li>
+</ul>
+</li>
+<li>
+<h4><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">STEP 2: Your tasks:</span></h4>
+<ul>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;">Preliminaries:</span></span></strong></p>
+<ul>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">Clone the folder named&nbsp;<strong>A2&nbsp;</strong>that is available on Gitlab under CSCI 2170.</span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Preserve the directory structure; do not change it. </span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Create new PHP and/or style/JS/image files if you need to and place these files in appropriate folders in the A2 directory that you clone/download.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Update the <strong>README.md</strong> file with your name, B00 number and the Academic Integrity pledge that you submitted in Assignment 1.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Include <span style="text-decoration: underline;"><strong>all</strong></span> citations and references to any external resource and/or code in&nbsp;<strong>both&nbsp;</strong>in the code and in README.md</span></span></p>
+</li>
+</ul>
+</li>
+<li><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><strong>Note:</strong>&nbsp;Assume that this timetable website that you will develop is for CS students only.</span></span></li>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;">User Story 1: View Course List and Information</span></span></strong></p>
+<ul>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">As a <em><strong>student</strong></em>,<br />I need to&nbsp;<em><strong>see a list of all courses available in the current academic term and the next academic term</strong></em>,<br />So that I can&nbsp;<strong><em>find out which one I'd like to take</em>.</strong><br /></span></p>
+</li>
+<li>
+<p><span style="text-decoration: underline;"><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">Acceptance criteria: Student selects "current academic term" or "next academic term":</span></span></p>
+<ul>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">Student can see the academic term (e.g. "2019/20 Winter" for current term or "2019/20 Summer" for next term). </span></p>
+</li>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">Student is able to switch between terms to see course listings.</span></p>
+</li>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">Below the academic term, student can see a list of all courses offered in the term.</span></p>
+</li>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">The course listing displays course codes and names with dates/times and instructor name in parentheses next to the course name, e.g. "CSCI 0000: Intro. to Life in CS (MWF 0935-1025, Dr. L. Skywalker)".</span></p>
+</li>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">Student can see a "More info. / add course" button or link next to each course in the listing to expand information about the course.</span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="text-decoration: underline;"><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">Acceptance criteria: Student clicks on "More info. / add course" button or link:</span></span></p>
+<ul>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">The content section expands below the course code and name, "pushing" below all other courses listed following the selected course. <strong>(Note: </strong>Imagine this to be something that uses jQuery functions such as hide() or slide() to expand/collapse content.)</span></p>
+</li>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">Student can see a brief description of the course (text), with link to sample PDF course syllabus.</span></p>
+</li>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">Student can see an "Add course" link or button below the description.</span></p>
+</li>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">The "Add course" link or button is disabled if student is not logged in.</span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;"><strong>BONUS!</strong> If student is logged in and if they are registered in a course, the "Add course" link/button is replaced with a link that says "You have added this course; click here to view your schedule" that links to the schedule.</span></p>
+</li>
+<li>
+<p><strong><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">Note:</span></strong><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">&nbsp;for now, save all course information in the file named "course_list.csv" listed under "db" in the assignment folder and read this information from that file.<br /></span></p>
+<span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">&nbsp;</span></li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;"><strong>User Story 2: Login to the View Profile/Schedule:</strong></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">As a <em><strong>student</strong></em><em>,<br /></em>I need to&nbsp;<em><strong>login to the timetable website</strong></em>,<br />so that I can&nbsp;<em><strong>view my schedule, add courses to my schedule and drop courses from my schedule</strong></em>.</span></span></p>
+</li>
+<li>
+<p><span style="text-decoration: underline;"><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Acceptance criteria: Student selects "Login" link from the main navigation menu.</span></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Student can see a login page that allows them to input their user name and password. </span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">If student information is correctly entered, student is taken to a "student profile" area.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">A link to the student's profile, with link text "Student name's profile", is displayed in the main navigation menu, along with a link to "logout". (<strong>Note:</strong> if the student's name is Yoda, the profile link should be named "Yoda's profile").</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">If student enters wrong information, a text line is displayed below to indicate an error in either username or password. (Remember, due to security reasons, it is not okay to tell users which of the two fields is wrong; you just have to let them know that either the username or password is wrong.)</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><strong>Note:&nbsp;</strong>for now, save all username and password information in plain text in a CSV file named "up_login.csv" that's available in the assignment folder under "db".</span></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="text-decoration: underline;"><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Acceptance criteria: Student selects "View Profile".</span></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Student sees a list of all courses in which they are currently registered for. (<strong>Note:</strong> for now, there is no limit on how many courses a student can register.)</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Student can see a "Drop this course" link next to each course on their schedule in their profile.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Student can see a list of courses with schedule conflicts, if any.</span></span></p>
+</li>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Note:</span></span></strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">&nbsp;for now, track all course registrations in one file named "c_registration.csv" that is available under "db" in the assignment folder.<br />&nbsp;</span></span></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;">User Story 3: Add a Course to the Schedule:</span></span></strong></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">As a&nbsp;<strong><em>student</em></strong><strong>,</strong><br />I need to&nbsp;<em><strong>add a course to my schedule</strong></em>,<br />So that I can&nbsp;<em><strong>register for a place in it and use it towards the completion of my degree requirements.</strong></em></span></span></p>
+</li>
+<li>
+<p><span style="text-decoration: underline;"><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Acceptance criteria: Student clicks on "Add course".</span></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Student clicks on "Add course" link from the course description on the course listing page to be taken to a new page.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The new page displays their schedule on the right half of the screen and a confirmation message to add this course on the left half of the screen.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The confirmation message on the left half of the screen shows the course name, course code, instructor name, schedule, and course description with a message below asking if the student wants to confirm and <strong>add</strong> the course.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">If the student clicks on "Yes, add the course" the course is added to their schedule and the student is taken back to the course listing page.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">If the student clicks on "No, take me back", the student is taken back to the course listing page.</span></span></p>
+</li>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Note:</span></span></strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">&nbsp;for now, track all course registrations in one file named "c_registration.csv" that is available under "db" in the assignment folder.<br />&nbsp;</span></span></p>
+<span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"></span></span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;">User Story 4: Drop a Course from the Schedule:</span></span></strong></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">As a&nbsp;<strong><em>student</em></strong>,<br />I need to&nbsp;<em><strong>drop a course from my schedule</strong></em><em>,<br /></em>So that I can&nbsp;<strong><em>consider taking other courses, or manage my time well</em></strong>.</span></span><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"></span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><span style="text-decoration: underline;">Acceptance criteria: Student selects the "Drop this course" link:</span></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Student is taken to a confirmation page similar to the one used to add courses (refer to User Story 3).</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The confirmation message on the left half of the screen shows the course name, course code, instructor name, schedule, and course description with a message below asking if the student wants to confirm and <strong>drop</strong> the course.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">If the student clicks on "Yes, drop the course" the course is removed from their schedule and the student is taken back to their profile/schedule page.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">If the student clicks on "No, take me back", the student is taken back to their profile/schedule page.<br />&nbsp;</span></span></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;">Citations:</span></span></strong></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Citations must be in the ACM format that is described on the official ACM web page here:<a href="https://www.acm.org/publications/authors/reference-formatting" target="_blank" rel="noopener">https://www.acm.org/publications/authors/reference-formatting</a></span><span style="font-size: 16px;"></span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Citations must be included in&nbsp;<strong>README.md&nbsp;</strong>and in the code if you have used any external resources to learn about specific code segments.</span></span></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h4><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 12pt;"></span><span style="font-size: 14pt;">STEP 4: What do I submit?</span></span></h4>
+<ul>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">You are required to submit this assignment&nbsp;<strong>in two places -- (a) Brightspace, and (b) Gitlab</strong><strong>.</strong></span></p>
+</li>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;"><strong>Submission on Gitlab&nbsp;--</strong> </span></p>
+<ul>
+<li><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Instructions to submit assignments on Gitlab (<a href="https://git.cs.dal.ca/" target="_blank" rel="noopener">https://git.cs.dal.ca/</a>) have been posted in a section under "Content &gt;&gt; Assignments" --- if you have any questions, please reach out to the CS Help Desk.</span></li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><strong><span style="font-size: 12pt;">Submission on Brightspace --</span></strong><span style="font-size: 12pt;">&nbsp;A single zip file named&nbsp;<strong>&lt;LASTNAME&gt;_&lt;FIRSTNAME&gt;_B00XXXXXX_A2.zip</strong></span><span style="font-size: 12pt;"></span></span></p>
+<ul>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Replace &lt;LASTNAME&gt; with your last name, and &lt;FIRSTNAME&gt; with your first name.</span></p>
+</li>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Replace "B00XXXXXX" with your B00 number.</span></p>
+</li>
+</ul>
+</li>
+<li><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">The above ZIP file should preserve the directory structure available in Gitlab. You may add additional PHP and/or other files as needed. Include a summary of the files you have added and why in <strong>README.md</strong><br /><br /></span></li>
+</ul>
+</li>
+<li>
+<h4><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">STEP 5: Milestones and Marking Scheme</span></h4>
+<ul>
+<li><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Milestones:&nbsp;</span></span></strong>
+<ul>
+<li><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">You are expected to attend the labs/tutorials on 31 Jan and 14 Feb to demonstrate progress in your assignment. </span></span></li>
+<li><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">This makes you eligible to get 10 marks of your final assignment score, i.e. 5 marks each for demonstrating progress in the tutorials on 31 Jan and 14 Feb.</span></span></li>
+<li><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Otherwise, your score will be graded out of 100% and scaled down to 90.</span></span></li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><strong>Detailed marking scheme</strong>&nbsp;is available in <a href="A2-MarkingScheme.pdf" target="_self"><strong>this PDF document</strong></a>.</span></span></p>
+</li>
+</ul>
+</li>
+</ol>
+<p></p>
+<p><span style="font-family: arial, helvetica, sans-serif;">&nbsp;</span></p>
+<p><span style="font-family: arial, helvetica, sans-serif;">&nbsp;</span></p>
+<p><span style="font-family: arial, helvetica, sans-serif;">&nbsp;</span></p>
+</body>
+</html>

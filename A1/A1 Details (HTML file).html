@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body style="font-family: verdana, sans-serif;font-size: 12px;">
+<h3><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">Changelog</span></h3>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">V 1.0 -- Raghav, 15 Jan 2020, Initial version.</span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">V 1.01 -- Raghav, 16 Jan 2020, Updated information about submission, i.e. minimal update about Gitlab submission.</span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">V 1.02 -- Raghav, 27 Jan 2020, Updated marking scheme based on Lighthouse experiments/reports from students.</span></p>
+</li>
+</ul>
+<h3><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">Purpose</span></h3>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">The purpose of this assignment is for you to recap your knowledge of front-end web development, and use it in the context of a server-side environment.</span></p>
+</li>
+<li><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">i.e. you will be taking what you have learned about front-end development and using that to "send" content to client machines.</span></li>
+</ul>
+<p></p>
+<h3><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">When is the assignment due?</span></h3>
+<ul>
+<li><span style="font-family: arial, helvetica, sans-serif;"><strong style="font-size: 0.95rem; letter-spacing: 0.01rem;"><span style="font-size: 12pt;">Monday, 27 January 2020 (11:30pm)&nbsp;</span></strong><span style="text-decoration: line-through; color: #696969;"><em><span style="font-size: 12pt;">Sunday, 26 January 2020 (11:30pm)</span></em></span></span></li>
+</ul>
+<p></p>
+<h3><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">Can we work on this assignment individually or in groups?</span></h3>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; background-color: yellow;">You are expected to work&nbsp;<strong>individually</strong>.</span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"><a rel="noopener" href="https://www.dal.ca/dept/university_secretariat/academic-integrity.html">Dalhousie's academic integrity rules</a> apply.</span></p>
+</li>
+</ul>
+<p></p>
+<h3><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">Expectations, in detail</span></h3>
+<ol>
+<li>
+<h4><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">STEP 1: Download the layout blueprint (PDF) posted along with this description.</span></h4>
+</li>
+<li>
+<h4 style="margin: 0in; font-family: Arial; font-size: 11pt;"><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">STEP 2: Set up a local server (i.e. localhost) environment.</span></h4>
+<ul>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">A local server or localhost environment is a software stack that contains a server software (e.g. Apache), interpreters for scripting languages (e.g. PHP) and an instance of a database management system (e.g. MySQL), among other services.</span></p>
+</li>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Examples of local server stacks include MAMP, XAMPP, WAMP, etc. The "AMP" in these names used to be in the form of an acronym for "Apache", "MySQL" or a variant of the DBMS, and "PHP". Now they are just referred to as software names.</span></p>
+</li>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">These server stacks help configure your computer as a server for development purposes.</span></p>
+</li>
+</ul>
+</li>
+<li>
+<h4><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">STEP 3: Your tasks:</span></h4>
+<ul>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;">Preliminaries:</span></span></strong></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Create a folder named&nbsp;<strong>A1&nbsp;</strong>inside the web root folder in your localhost set up. These web root folders are typically named&nbsp;<em>htdocs</em>, or&nbsp;<em>wwwroot</em>, or <em>public_html</em>, etc. and this depends on your localhost software (e.g. MAMP has a folder named htdocs in which this A1 folder would need to be created.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Inside this folder, create five other folders named --&nbsp;<strong>includes</strong>,&nbsp;<strong>css</strong>,&nbsp;<strong>js</strong>,&nbsp;<strong>img&nbsp;</strong>and&nbsp;<strong>files</strong>.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Create the following files inside&nbsp;<strong>A1&nbsp;</strong>--&nbsp;<strong>index.php&nbsp;</strong>(homepage) and&nbsp;<strong>info.php </strong>(information page). You will see details about these below.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Remember, any other PHP files that you may need to create must end with a&nbsp;<strong>.php&nbsp;</strong>file extension.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Create the following files inside&nbsp;<strong>files&nbsp;</strong>--&nbsp;<strong>integrity.txt</strong>,&nbsp;<strong>pledge.txt&nbsp;</strong>and&nbsp;<strong>citations.txt</strong></span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Download an appropriate and free-to-use image on the topic "academic integrity" from Creative Commons (<a href="https://search.creativecommons.org" target="_blank" rel="noopener">https://search.creativecommons.org</a>). Remember to cite the image in&nbsp;<strong>citations.txt</strong>.Save this image into the&nbsp;<strong>img&nbsp;</strong>folder.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Download an appropriate and free-to-use image on the topic "pledge" from Creative Commons (<a href="https://search.creativecommons.org" target="_blank" rel="noopener">https://search.creativecommons.org</a>). Remember to cite the image in&nbsp;<strong>citations.txt</strong>.Save this image into the&nbsp;<strong>img&nbsp;</strong>folder.</span></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;">Layout Task:</span></span></strong></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Use Bootstrap (<a href="https://getbootstrap.com" target="_blank" rel="noopener">https://getbootstrap.com</a>) to create the web page layout as identified in the layout blueprint document (that you downloaded in Step 1).</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Become familiar with Bootstrap and use it to implement the layout, with the following requirements.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The two pages are expected to be responsive.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Styles -- fonts, colours, etc. are to be chosen by you; other than the ones indicated in the layout blueprint.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Content layout -- you must present the content as described in the layout blueprint.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Content -- see below for what content you need to include in your pages.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><strong><span style="font-size: 16px;">Re-use</span></strong><span style="font-size: 16px;">&nbsp;-- you must code your web pages so that aspects of the page that appear on both the homepage and the info page (i.e.&nbsp;<em>common aspects</em>) must be re-used. The scrupts to re-use content must be written in PHP and saved in separate PHP files in the <strong>includes</strong> folder.</span><span style="font-size: 16px;"></span></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;"><strong>Content Task 1:</strong></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">This task deals with the main content, as it applies to the homepage and the information page.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The pages are expected to follow layout guidelines specified in the blueprint. The instructions on the blueprint are pretty self-explanatory regarding many aspects of the content. Follow them; and if you need to, make assumptions about any additional content and include PHP comments to describe your assumptions.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">You are also welcome to include dummy text (Lorem ipsum dolor...) that you can download from <a href="https://www.lipsum.com" target="_blank" rel="noopener">https://www.lipsum.com</a>&nbsp;for some of the content. Essentially this content helps "fill the page" so that you can verify your layout on different screens.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">There are two places on the homepage (and one on the info page) in which you are expected to include some external content, identified as "content from File Read Task 1" and "content from File Read Task 1" (and "citations" in the info page). Follow instructions below to include this content.</span></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;">File Read Task 1:</span></span></strong></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Go to <a href="https://www.dal.ca/dept/university_secretariat/academic-integrity.html" target="_blank" rel="noopener">https://www.dal.ca/dept/university_secretariat/academic-integrity.html</a></span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Understand Dalhousie's guidelines on academic integrity.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Copy the text for Dalhousie's definition for what is considered plagiarism. Paste this text within double quotes in the file named&nbsp;<strong>integrity.txt</strong></span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Remember to use the guidelines governing copying/pasting direct quotations from sources when you do so.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Read this file using PHP File I/O techniques and display it in the content box shown in the layout blueprint.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">To the right of this content, include the image on "academic integrity" that you downloaded.</span></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;">File Read Task 2:</span></span></strong></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Type the following text in the file named&nbsp;<strong>pledge.txt&nbsp;</strong>--<br /><br /><img src="IntegrityPledge.png" alt="CSCI 2170 Academic Integrity Pledge" title="CSCI 2170 Academic Integrity Pledge" style="max-width: 80%; border: 1px solid black;" data-d2l-editor-default-img-style="true" /><br /><br /></span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Replace &lt;YOUR FULL NAME&gt; with your full name in the above pledge.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Read this file using PHP File I/O techniques and display the content in pledge.txt in the content box shown in the layout blueprint. To its right, include the image on "pledge" that you downloaded.</span></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;">File Read Task 3:</span></span></strong></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Use ACM citations format (details below) to cite all sources that you may have used. This should include a citation to Bootstrap website, too.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Use PHP File I/O techniques to read and display all citations on the information page (as indicated in the layout blueprint).</span></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;"><strong>Content Task 2:</strong><br /></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Include a login form in the homepage as specified in the layout blueprint.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">In the form, make sure to set method to <strong>post</strong>&nbsp;and action to&nbsp;<strong>index.php</strong></span></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;">Citations:</span></span></strong></p>
+<ul>
+<li><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Citations must be in the ACM format that is described on the official ACM web page here:<a href="https://www.acm.org/publications/authors/reference-formatting" target="_blank" rel="noopener">https://www.acm.org/publications/authors/reference-formatting</a></span><span style="font-size: 16px;"></span></span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h4><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 12pt;"></span><span style="font-size: 14pt;">STEP 4: What do I submit?</span></span></h4>
+<ul>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">You are required to submit this assignment&nbsp;<strong>in two places -- (a) Brightspace, and (b) Gitlab</strong><span style="text-decoration: line-through; color: #c0c0c0;"> / Bluenose</span><strong>.</strong></span></p>
+</li>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;"><strong>Submission on Gitlab<span style="text-decoration: line-through; color: #c0c0c0;"> / Bluenose</span> --</strong> </span></p>
+<ul>
+<li>
+<p><span style="text-decoration: line-through; color: #c0c0c0;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Instructions for submission on Gitlab / Bluenose will follow shortly. I'm working with our CS Tech Support team on this matter currently.</span></span></p>
+</li>
+<li>
+<p><span style="text-decoration: line-through; color: #c0c0c0; font-size: 12pt;">We have a plan to allow you to submit code on Gitlab (<a href="https://git.cs.dal.ca/" target="_blank" rel="noopener">https://git.cs.dal.ca/</a>). I will be posting more information by the end of this week or early next week. Work on creating the deliverable for Brightspace, because the same files will have to be updated on Gitlab as well.</span></p>
+</li>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Instructions to submit assignments on Gitlab (<a href="https://git.cs.dal.ca/" target="_blank" rel="noopener">https://git.cs.dal.ca/</a>) have been posted in a section under "Content &gt;&gt; Assignments" --- if you have any questions, please reach out to the CS Help Desk.</span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><strong><span style="font-size: 12pt;">Submission on Brightspace --</span></strong><span style="font-size: 12pt;">&nbsp;A single zip file named&nbsp;<strong>&lt;LASTNAME&gt;_&lt;FIRSTNAME&gt;_B00XXXXXX_A1.zip</strong></span><span style="font-size: 12pt;"></span></span></p>
+<ul>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Replace &lt;LASTNAME&gt; with your last name, and &lt;FIRSTNAME&gt; with your first name.</span></p>
+</li>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Replace "B00XXXXXX" with your B00 number.</span></p>
+</li>
+</ul>
+</li>
+<li><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">The above ZIP file should contain files as shown in the directory structure below.&nbsp;<strong>Failure to follow specified formats will lead to a 10% penalty on the assignment.</strong><img src="PastedImage_u6cnz9xixdf2zkvtmc2hakp13sekeu4n00129330885.png" alt="CSCI 2170 (W2020) Assignment 1 Folder Structure" title="CSCI 2170 (W2020) Assignment 1 Folder Structure" style="max-width: 100%;" data-d2l-editor-default-img-style="true" width="540" height="346" /><br /><br /></span></li>
+</ul>
+</li>
+<li>
+<h4><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">STEP 5: Marking and rubric</span></h4>
+<ul>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">This assignment will be evaluated for <strong>100 marks</strong>, with the following breakdown:</span></p>
+<ul>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;"><strong>10 marks</strong> -- Appearance of the homepage as per the layout blueprint.</span></p>
+</li>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;"><strong>10 marks</strong> -- Appearance of the information page as per the layout blueprint.</span></p>
+</li>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;"><strong>5 marks</strong> -- Use of C.R.A.P. principles (Contrast, Repetition, Alignment, Proximity) and best practice guidelines to develop websites.</span></p>
+</li>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;"><strong>5 marks</strong> -- Web pages are responsive (<strong>2.5 marks </strong>for each page).</span></p>
+</li>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;"><strong>20 marks = 2 pages x 10 marks</strong> -- Audit of both pages using <a href="https://developers.google.com/web/tools/lighthouse#devtools" target="_blank" rel="noopener"><strong>Lighthouse</strong></a>&nbsp;(web page quality checked developed by Google). This audit will evaluate 3 parameters (accessibility, best practices and SEO).<br />The maximum score for best practices and SEO is 3 marks each, and the maximum score for accessibility is 4 marks, evaluated as follows:</span></p>
+<ul>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Audit score between 0 - 49:&nbsp;<strong>1 mark</strong></span></p>
+</li>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Audit score between 50 - 84:&nbsp;<strong>2 mark</strong></span></p>
+</li>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Audit score between 85 - 100:&nbsp;<strong>3 mark&nbsp;</strong>(or,&nbsp;<strong>4 marks&nbsp;</strong>for accessibility)</span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><strong><span style="font-size: 12pt;">10 marks --</span></strong><span style="font-size: 12pt;">&nbsp;Page loads content that is read through other files correctly (File Read Tasks 1, 2 and 3).</span><span style="font-size: 12pt;"></span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><strong><span style="font-size: 12pt;">10 marks -- </span></strong><span style="font-size: 12pt;">Uses "include" or "require" statements appropriately on the page to implement re-use (as identified in the instructions above).</span><span style="font-size: 12pt;"></span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><strong><span style="font-size: 12pt;">20 marks</span></strong><span style="font-size: 12pt;">&nbsp;-- Citations:</span><span style="font-size: 12pt;"></span></span></p>
+<ul>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Citations for any external content referred or used are provided in a text file: <strong>5 marks</strong></span></p>
+</li>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">The text file's contents are displayed on the information page:&nbsp;<strong>5 marks</strong></span></p>
+</li>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif; background-color: yellow;">Report to AIO for no citations.</span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;"><strong>10 marks</strong> -- Code quality:</span></p>
+<ul>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Code is commented to explain main sections and/or functions: <strong>4 marks</strong></span></p>
+</li>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Code uses variable and function names that are self-explanatory:&nbsp;<strong>6 marks</strong></span></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p></p>
+<p><span style="font-family: arial, helvetica, sans-serif;">&nbsp;</span></p>
+<p><span style="font-family: arial, helvetica, sans-serif;">&nbsp;</span></p>
+<p><span style="font-family: arial, helvetica, sans-serif;">&nbsp;</span></p>
+</body>
+</html>

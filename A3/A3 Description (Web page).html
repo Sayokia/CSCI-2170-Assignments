@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body style="font-family: verdana, sans-serif;font-size: 12px;">
+<h3><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">Changelog</span></h3>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">V 1.0 -- Raghav, 26 Feb 2020, Initial version.</span></p>
+</li>
+</ul>
+<h3></h3>
+<h3><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">Re-stating some expectations in this assignment</span></h3>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"><em><strong>Milestones!</strong></em> Check section below for information (Same as in A2).</span></p>
+</li>
+<li><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">User stories are again used to specify requirements.</span></li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">All submissions must be submitted on Gitlab (same as A1).&nbsp;We check for functionality by using code submitted on Gitlab.</span></p>
+</li>
+</ul>
+<h3></h3>
+<h3><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">Purpose</span></h3>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">The purpose of this assignment is for you to apply your knowledge of server-side scripting to (a) find/fix errors in a codebase, and (b) work with databases. </span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">In this assignment, you will apply your knowledge of PHP and MySQL.</span></p>
+</li>
+</ul>
+<p></p>
+<h3><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">When is the assignment due?</span></h3>
+<ul>
+<li><span style="font-family: arial, helvetica, sans-serif;"><strong style="font-size: 0.95rem; letter-spacing: 0.01rem;"><span style="font-size: 12pt;">Saturday, 14 March 2020 (11:30pm)</span></strong></span></li>
+</ul>
+<p></p>
+<h3><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">Can we work on this assignment individually or in groups?</span></h3>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; background-color: yellow;">You are expected to work&nbsp;<strong>individually</strong>.</span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"><a rel="noopener" href="https://www.dal.ca/dept/university_secretariat/academic-integrity.html">Dalhousie's academic integrity rules</a> apply.</span></p>
+</li>
+</ul>
+<p></p>
+<h3><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">Expectations, in detail</span></h3>
+<ol>
+<li>
+<h4><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">STEP 1: </span><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">Development:</span></h4>
+<ul>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">It is ideal to develop the website using your localhost setup and verify its functionality by hosting it on the FCS Bluenose server.</span></p>
+</li>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">You can find out more about the web hosting space assigned to you by accessing <a href="https://web.cs.dal.ca" target="_blank" rel="noopener">https://web.cs.dal.ca</a></span></p>
+</li>
+<li><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">You are expected to develop your website to meet the acceptance criteria set out in the user stories below.</span></li>
+</ul>
+</li>
+<li>
+<h4><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">STEP 2: Your tasks:</span></h4>
+<ul>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;">Preliminaries:</span></span></strong></p>
+<ul>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">Clone the folder named&nbsp;<strong>A3&nbsp;</strong>that is available on Gitlab under CSCI 2170.</span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Preserve the directory structure; do not change it. </span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Create new PHP and/or style/JS/image files if you need to and place these files in appropriate folders in the A3 directory that you clone/download.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Update the <strong>README.md</strong> file with your name, B00 number and the Academic Integrity pledge that you submitted in Assignment 1.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Include <span style="text-decoration: underline;"><strong>all</strong></span> citations and references to any external resource and/or code in&nbsp;<strong>both&nbsp;</strong>in the code and in README.md</span></span></p>
+</li>
+<li><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Some of the instructions require you to make certain assumptions. Any assumptions you make to implement the functionality as expected in this assignment must be described in README.md as a separate section.<br /><br /></span></span></li>
+</ul>
+</li>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;">User Story 1: Error Correction:</span></span></strong></p>
+<ul>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">As a <em><strong>back-end web developer</strong></em>,<br />I need to <strong><em>fix all the errors in the given&nbsp;</em></strong><em><strong>website</strong></em>,<br />So that I can&nbsp;<strong><em>use the codebase to add additional features</em>.</strong><br /></span></p>
+</li>
+<li>
+<p><span style="text-decoration: underline;"><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">Acceptance criteria: Fixing all errors in the code:</span></span></p>
+<ul>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">Find and fix all errors in the code that you cloned from Gitlab. </span></p>
+</li>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">You are expected to make changes to the files that you download &ndash; you are not expected to create new versions of these files.</span></p>
+</li>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">Fix the errors and use the code to implement the user stories that follow.</span><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">&nbsp;<br /><br /></span></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;"><strong>User Story 2: Database connection and use:</strong></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">As a <em><strong>back-end web developer</strong></em><em>,<br /></em>I need to&nbsp;<em><strong>connect the website to a database</strong></em>,<br />so that I can&nbsp;<em><strong>implement functionality such as storing/retrieving/modifying data in a reliable manner</strong></em>.</span></span></p>
+</li>
+<li>
+<p><span style="text-decoration: underline;"><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Acceptance criteria: Update db.php to connect to the DB as specified.</span></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Hostname: <strong>localhost</strong></span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Username:&nbsp;<strong>root</strong></span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Password:&nbsp;<strong>root</strong></span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Database name: <strong>2170</strong></span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">You are expected to work with 3 tables:&nbsp;<strong>mindfeed</strong>,&nbsp;<strong>a3login&nbsp;</strong>and&nbsp;<strong>a3users</strong>. The ERD and table structures are available on Brightspace as separate images that you can download and view for reference.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Create a connection object named <strong>$conn</strong>. We will be using $conn during marking as well.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><strong>Note: </strong></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><strong>When marking, we may change the DB file to work with our database on Bluenose</strong>. If you want to verify whether your file works on the FCS Bluenose server, you will need to change the DB login credentials as specified on <a href="https://web.cs.dal.ca">https://web.cs.dal.ca</a>&nbsp;under "Databases". You may have to set it up on <a href="https://web.cs.dal.ca">https://web.cs.dal.ca</a>&nbsp;if you have not already done so.</span></span><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">&nbsp;</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">We will use the same table structures and same table column names. So as long as you have used the same structure referenced in the ERD and table structure diagrams without any typos or case differences, you should be okay.</span></span></p>
+</li>
+<li><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><strong>Test your code with your own data input to the DB</strong>.</span></span></li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">If we are unable to execute your code with our table structures, you will not receive any points for the specific functionality.<br /><br /></span></span></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;">User Story 3: User Visits Homepage of the Website:</span></span></strong></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">As a <strong><em>user</em>,</strong><br />I need to be <strong><em>able to login to the website</em></strong>,<br />So that I can&nbsp;<em><strong>see the contents and post comments to the web page.</strong></em></span></span></p>
+</li>
+<li>
+<p><span style="text-decoration: underline;"><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Acceptance criteria: User lands on (or visits) the homepage.</span></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">User sees a navigation menu with a link to the page named "The Force" (linking to theforce.php).</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">User sees the homepage with a login option. </span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The login option is either a drop-down option or is embedded in the page and needs the user to submit a user name and a password.</span></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">If the user <strong>is logged in:</strong></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><strong></strong>The user sees their full name in the navigation menu, with a drop-down option to logout appearing when they click on the name.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The user sees the commenting interface with the paragraphs of text and headings appearing above the comments.</span></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">If the user <strong>is not logged in</strong>: </span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The user only sees the homepage navigation and the banner (that is styled using the &ldquo;jumbotron&rdquo; class).</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The user sees the disabled comment form with a message that says "You must be logged in to interact using this commenting feature."</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The user does not see comments posted below the form.</span></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Note:</span></span></strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"> </span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">You are not allowed to modify any of the design elements of this web page.</span></span><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"></span></span><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">&nbsp;</span></p>
+</li>
+<li><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">Do not hard-code the website name to display it on the page header. Instead, write a function named getWebsiteName() and call it to display the website&rsquo;s name.</span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="text-decoration: underline;"><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">Acceptance criteria: User clicks on navigation link to "The Force"</span></span></p>
+<ul>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">If the user <strong>is logged in:</strong></span></p>
+<ul>
+<li><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">The user is taken to the page named "The Force", i.e. theforce.php.</span></li>
+</ul>
+</li>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">If the user <strong>is not logged in</strong>:</span></p>
+<ul>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">The user is redirected back to the homepage and an error message is displayed. </span></p>
+</li>
+<li>
+<p><span style="font-size: 16px; font-family: arial, helvetica, sans-serif;">This page (theforce.php) can only be accessed by a user who is logged in.<br /><br /></span></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;">User Story 4: Posting and Viewing Comments:</span></span></strong></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">As a&nbsp;<strong><em>user</em></strong>,<br />I need to&nbsp;<em><strong>post and view comments through a web form</strong></em><em>,<br /></em>So that I can&nbsp;<strong><em>interact with the content on the web page</em></strong>.</span></span><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"></span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><span style="text-decoration: underline;">Acceptance criteria: User submits a comment:</span></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">If the user <strong>is logged in</strong>,</span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The user sees the form to submit comments to the web page.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The user sees comments (previously submitted by anyone) below the form.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The user can submit more comments using the form.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The user can use the "clear" button to remove all data from the form.</span></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">If the user <strong>is not logged in</strong>,</span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The user sees a disabled comment form.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The user does not see the comments.</span></span></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="text-decoration: underline;"><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Acceptance criteria: User scrolls the page to view comments</span></span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">If the user <strong>is logged in</strong>,</span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Below the form, the user sees all comments, both posted by this logged in user and other users of the website.</span></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">If the user <strong>is not logged in</strong>,</span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The user does not see any comments. The user sees a note that says "You must be logged in to interact using this commenting feature."</span></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"></span></span><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Note:</span></span></strong></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">You are expected to implement the functionality to post comments in the files named post_comment.php and view_comments.php. These files are located in the includes folder.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Try to implement the post comment and view comment features as two independent and re-usable scripts. This helps you to simply "plug-n-play" these features on other pages as well. See theforce.php to get an idea of what is expected.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><strong><em>Hint:</em> </strong></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><strong></strong>Move the script to process all comment-related requests (both post and view) into a new file named process_comments.php, which works as follows:</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">This serves as a comment &ldquo;controller&rdquo; of sorts in terms of the MVC terminology. You would submit all data requests and data to-be-submitted to this controller, which would then process the data as required.<br />&nbsp;</span></span></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;">User Story 5: Login and Session Management:</span></span></strong></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">As a&nbsp;<strong><em>user</em></strong>,<br />I need to&nbsp;<em><strong>login (and logout) from the website</strong></em><em>,<br /></em>So that I can&nbsp;<strong><em>securely interact with the content on the web page</em></strong>.</span></span><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"></span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><span style="text-decoration: underline;">Acceptance criteria: User submits login information (username and password):</span></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The website compares the username and password combination.<br /></span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">If the user enters the <strong>correct</strong>&nbsp;login information,<br /></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The user is logged in.<br /></span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">A new navigation menu link appears with the user's full name. This has a drop-down action that shows a link to logout.<br /></span></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">If the user enters the <strong>wrong</strong>&nbsp;login information,<br /></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The user sees an error message below the login form, in red colour, indicating the error.<br /></span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The user is *not* logged in.</span></span></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><span style="text-decoration: underline;"><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Acceptance criteria: User selects the logout option from the drop-down navigation:</span></span></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The user is logged out.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The user logout drop-down menu item is removed from the navigation menu.</span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">The user does not see the comments and the comment box is disabled.</span></span></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">Note:</span></strong></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"></span><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">Set up the tables as specified in the user story named Database Connection and Use. You'll need to use these tables for the login feature.</span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"></span><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">Update the login form (that you implemented in the homepage) so that the form will be processed by the file named login.php (stored in the includes folder).</span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"></span><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">login.php must perform the following actions:</span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"></span><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">Process the login information and authenticate (or, verify) the user, i.e. compare the username and password submitted by the user with details stored in the DB, and verify that records match. </span><br /><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">The user is expected to provide their username (not email address) along with their password.</span><br /><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">If the user has entered wrong login information, i.e. if there is an error in either the username or password, do the following: </span><br /><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"></span></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">Return an appropriate error code and redirect the user to the homepage. Describe the error code you will use and how you will implement it in README.md</span><br /><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">Clearly indicate through an error message that there has been an error. I will leave the content of the error message up to you. Ensure that this error message is in a colour that is different from the regular text so that it is emphasized. This feedback to the user also ensures that you have implemented &ldquo;Visibility of System Status&rdquo;, which is one of the important Usability Heuristics.</span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">Store user details such as full name, username and user type as session variables, since they may be needed for other features.</span></p>
+<span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"></span></span></li>
+<li><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">Implement the logout feature in logout.php stored in the <strong>includes</strong> folder. This file must log the user out by destroying the session appropriately. There is one standard way of doing this as discussed in class. Please use it and cite it appropriately.<br /><br /></span><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"></span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">You are not expected to implement security in this login processing. We will do that in the next assignment.</span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px; background-color: yellow;">Citations:</span></span></strong></p>
+<ul>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Citations must be in the ACM format that is described on the official ACM web page here:<a href="https://www.acm.org/publications/authors/reference-formatting" target="_blank" rel="noopener">https://www.acm.org/publications/authors/reference-formatting</a></span><span style="font-size: 16px;"></span></span></p>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Citations must be included in&nbsp;<strong>README.md&nbsp;</strong>and in the code if you have used any external resources to learn about specific code segments.</span></span></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h4><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 12pt;"></span><span style="font-size: 14pt;">STEP 4: What do I submit?</span></span></h4>
+<ul>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">You are required to submit this assignment&nbsp;<strong>in two places -- (a) Brightspace, and (b) Gitlab</strong><strong>.</strong></span></p>
+</li>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;"><strong>Submission on Gitlab&nbsp;--</strong> </span></p>
+<ul>
+<li><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Instructions to submit assignments on Gitlab (<a href="https://git.cs.dal.ca/" target="_blank" rel="noopener">https://git.cs.dal.ca/</a>) have been posted in a section under "Content &gt;&gt; Assignments" --- if you have any questions, please reach out to the CS Help Desk.</span></li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><strong><span style="font-size: 12pt;">Submission on Brightspace --</span></strong><span style="font-size: 12pt;">&nbsp;A single zip file named&nbsp;<strong>&lt;LASTNAME&gt;_&lt;FIRSTNAME&gt;_B00XXXXXX_A3.zip</strong></span><span style="font-size: 12pt;"></span></span></p>
+<ul>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Replace &lt;LASTNAME&gt; with your last name, and &lt;FIRSTNAME&gt; with your first name.</span></p>
+</li>
+<li>
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Replace "B00XXXXXX" with your B00 number.</span></p>
+</li>
+</ul>
+</li>
+<li><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">The above ZIP file should preserve the directory structure available in Gitlab. You may add additional PHP and/or other files as needed. Include a summary of the files you have added and why in <strong>README.md</strong><br /><br /></span></li>
+</ul>
+</li>
+<li>
+<h4><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">STEP 5: Milestones and Marking Scheme</span></h4>
+<ul>
+<li><strong><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Milestones:&nbsp;</span></span></strong>
+<ul>
+<li><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">You are expected to attend the labs/tutorials on 28 Feb and 13 Mar to demonstrate progress in your assignment. </span></span></li>
+<li><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">This makes you eligible to get 10 marks of your final assignment score, i.e. 5 marks each for demonstrating progress in the tutorials on 28 Feb and 13 Mar.</span></span></li>
+<li><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;">Otherwise, your score will be graded out of 100% and scaled down to 90.</span></span></li>
+</ul>
+</li>
+<li>
+<p><span style="font-family: arial, helvetica, sans-serif;"><span style="font-size: 16px;"><strong>Detailed marking scheme</strong>&nbsp;is <a href="A3-MarkingScheme.pdf" target="_self">available in this PDF document</a>.</span></span></p>
+</li>
+</ul>
+</li>
+</ol>
+<p></p>
+<p><span style="font-family: arial, helvetica, sans-serif;">&nbsp;</span></p>
+<p><span style="font-family: arial, helvetica, sans-serif;">&nbsp;</span></p>
+<p><span style="font-family: arial, helvetica, sans-serif;">&nbsp;</span></p>
+</body>
+</html>
